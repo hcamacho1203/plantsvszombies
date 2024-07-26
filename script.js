@@ -389,45 +389,45 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 function preload() {
     for (let i = 1; i <= 6; i++) {
-        sunflowr.push(loadImage(`img/plants/sunflowr/${i}.png`));
+        sunflowr.push(loadImage(`plants/sunflowr/${i}.png`));
     }
     for (let i = 1; i <= 8; i++) {
-        lanzaguisantes.push(loadImage(`img/plants/lanzaguisantes/${i}.png`));
+        lanzaguisantes.push(loadImage(`plants/lanzaguisantes/${i}.png`));
     }
     for (let i = 1; i <= 5; i++) {
-        repetidora.push(loadImage(`img/plants/repetidora/${i}.png`));
+        repetidora.push(loadImage(`plants/repetidora/${i}.png`));
     }
     for (let i = 1; i <= 3; i++) {
-        nuez.push(loadImage(`img/plants/nuez/${i}.png`));
+        nuez.push(loadImage(`plants/nuez/${i}.png`));
     }
     for (let i = 1; i <= 2; i++) {
-        patatapum.push(loadImage(`img/plants/patatapum/${i}.png`));
+        patatapum.push(loadImage(`plants/patatapum/${i}.png`));
     }
-    zombie.walk = loadImage("./img/zombie.png");
-    zombie.eat = loadImage("./img/zombies/zombie/zombie-eat.png");
-    zombieFlag.eat = loadImage("./img/zombies/zombieFlag/zombieFlag-eat.png");
-    zombieFlag.walk = loadImage("./img/zombies/zombieFlag/zombieFlag-walk.png");
+    zombie.walk = loadImage("./zombie.png");
+    zombie.eat = loadImage("./zombies/zombie/zombie-eat.png");
+    zombieFlag.eat = loadImage("./zombies/zombieFlag/zombieFlag-eat.png");
+    zombieFlag.walk = loadImage("./zombies/zombieFlag/zombieFlag-walk.png");
     for (let i = 1; i <= 3; i++) {
         zombieBucket.walk.push(
-            loadImage(`./img/zombies/zombieBucket/walk/${i}.png`)
+            loadImage(`./zombies/zombieBucket/walk/${i}.png`)
         );
         zombieBucket.eat.push(
-            loadImage(`./img/zombies/zombieBucket/eat/${i}.png`)
+            loadImage(`./zombies/zombieBucket/eat/${i}.png`)
         );
         zombieCone.walk.push(
-            loadImage(`./img/zombies/zombieCone/walk/${i}.png`)
+            loadImage(`./zombies/zombieCone/walk/${i}.png`)
         );
-        zombieCone.eat.push(loadImage(`./img/zombies/zombieCone/eat/${i}.png`));
+        zombieCone.eat.push(loadImage(`./zombies/zombieCone/eat/${i}.png`));
     }
-    zombieBucket.walk.push(loadImage(`./img/zombies/zombie/zombie-walk.png`));
-    zombieBucket.eat.push(loadImage(`./img/zombies/zombie/zombie-eat.png`));
-    zombieCone.walk.push(loadImage(`./img/zombies/zombie/zombie-walk.png`));
-    zombieCone.eat.push(loadImage(`./img/zombies/zombie/zombie-eat.png`));
-    sol = loadImage("./img/sol.png");
-    grass1 = loadImage("./img/grass1.jpg");
-    grass2 = loadImage("./img/grass2.jpg");
-    floor = loadImage("./img/floor.jpg");
-    lawnmower = loadImage("./img/lawnmower.png");
+    zombieBucket.walk.push(loadImage(`./zombies/zombie/zombie-walk.png`));
+    zombieBucket.eat.push(loadImage(`./zombies/zombie/zombie-eat.png`));
+    zombieCone.walk.push(loadImage(`./zombies/zombie/zombie-walk.png`));
+    zombieCone.eat.push(loadImage(`./zombies/zombie/zombie-eat.png`));
+    sol = loadImage("./sol.png");
+    grass1 = loadImage("./grass1.jpg");
+    grass2 = loadImage("./grass2.jpg");
+    floor = loadImage("./floor.jpg");
+    lawnmower = loadImage("./lawnmower.png");
 }
 function setup() {
     createCanvas(window.innerWidth - 100, window.innerHeight); // Crea el lienzo para el juego
