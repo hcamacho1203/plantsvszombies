@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>pvz</title>
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.9.3/lib/p5.js"></script>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<div class="container">
+		<div class="containerSun">
+			<div>
+				<img src="/img/sol.png" alt="" />
+			</div>
+			<span class="soles">50</span>
+		</div>
+		<ul class="plantsContainer">
+			<li>
+				<label>
+					<div class="card">
+						<img src="/img/sunflowr.png" alt="" />
+						<div class="costo">
+							<span>50</span>
+						</div>
+						<input type="radio" name="plantas" value="sunflowr" />
+					</div>
+				</label>
+			</li>
+			<li>
+				<label>
+					<div class="card">
+						<img src="/img/lanzaguisantes.png" alt="" />
+						<div class="costo">
+							<span>100</span>
+						</div>
+						<input type="radio" name="plantas" value="lanzaguisantes" />
+					</div>
+				</label>
+			</li>
+			<li class="hidden1">
+				<label>
+					<div class="card">
+						<img src="/img/plants/nuez/1.png" />
+						<div class="costo">
+							<span>50</span>
+						</div>
+						<input type="radio" name="plantas" value="nuez" />
+					</div>
+				</label>
+			</li>
+			<li class="hidden2">
+				<label>
+					<div class="card">
+						<img src="/img/plants/repetidora/1.png" alt="" />
+						<div class="costo">
+							<span>200</span>
+						</div>
+						<input type="radio" name="plantas" value="repetidora" />
+					</div>
+				</label>
+			</li>
+			<li class="hidden3">
+				<label>
+					<div class="card">
+						<img src="/img/plants/patatapum/2.png" alt="" />
+						<div class="costo">
+							<span>25</span>
+						</div>
+						<input type="radio" name="plantas" value="patatapum" />
+					</div>
+				</label>
+			</li>
+		</ul>
+	</div>
+	<main class="canvas"></main>
+	<script src="/script.js"></script>
+</body>
+</html>

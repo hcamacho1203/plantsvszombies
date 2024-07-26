@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Kode+Mono:wght@400..700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Concert One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body {
+    overflow: hidden;
+    display: flex;
+    background: #333;
+}
+.container {
+    width: 100px;
+    padding: 10px 5px;
+    box-shadow: 0 0 10px #3f180b inset;
+    background: #88421f;
+}
+.containerSun {
+    width: 100%;
+    background: #692f16;
+    padding: 5px;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    & img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+    & .soles {
+        width: 100%;
+        text-align: center;
+        padding: 3px 10px;
+        background: #e7e3aa;
+    }
+}
+.plantsContainer {
+    display: grid;
+    gap: 10px;
+    & .card {
+        background: #abc897;
+        position: relative;
+        display: grid;
+        place-items: center;
+        border-radius: 5px;
+        overflow: hidden;
+        height: 60px;
+        overflow: hidden;
+        & img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 80px;
+            height: auto;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+        }
+        & .costo {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background: #e7e3aa;
+            padding: 0 5px;
+            font-size: 14px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+        }
+    }
+    & .selected {
+        background: #333;
+    }
+}
+input[type="radio"] {
+    display: none;
+}
+:is(.hidden1, .hidden2, .hidden3) {
+    display: none;
+}
